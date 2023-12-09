@@ -26,11 +26,6 @@ const INFO = {
 			"Greetings! I'm Sayantan Roy Arko, a passionate explorer in the fields of robotics and technology. My journey unfolds as the CEO and Co-Founder of Dubotech Ltd., where I spearhead a groundbreaking startup in marine robotics, agriculture technology, and smart embedded devices. Dive into my world of innovation!",
 	},
 
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
 	projects: [
 		{
 			id: "autonomous-underwater-vehicle",
