@@ -57,8 +57,8 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   z-index: 1000;
   cursor: pointer;
 }
@@ -86,10 +86,41 @@
   cursor: pointer;
 }
 
+/* magazine.css */
 
+/* magazine.css */
 
+.magazine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax values as needed */
+  gap: 5px; /* Adjust the gap as needed */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.magazine-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.magazine-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Different styles for alternate items */
+.magazine-item:nth-child(even) img {
+  object-position: right top; /* Adjust as needed */
+}
+
+/* Add the rest of your lightbox styles here if not already present */
+
+/* Mobile responsiveness */
 @media (max-width: 600px) {
-  .explorations-container {
-    padding-top: 60px;
+  .magazine-grid {
+    grid-template-columns: 1fr; /* Single column for mobile */
   }
 }
+

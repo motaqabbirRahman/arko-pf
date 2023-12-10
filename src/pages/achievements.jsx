@@ -7,7 +7,6 @@ import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
-import SEO from "../data/seo";
 
 import "./styles/achievements.css";
 
@@ -18,7 +17,6 @@ const Achievements = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const currentSEO = SEO.find((item) => item.page === "achievements");
 
   return (
     <React.Fragment>

@@ -3,21 +3,17 @@ import { Helmet } from "react-helmet";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import SEO from "../data/seo";
 import "./styles/exploration.css";
 
 const Exploration = () => {
-  const currentSEO = SEO.find((item) => item.page === "exploration");
 
   const imageFilenames = [
-    "iot-air.jpg",
-    "auv.jpg",
-    "singapore.jpg",
-    "ar-game.JPG",
-    "iot-air.jpg",
-    "robusub.jpg",
-    "robusub2022.jpg",
-    "singapore.jpg",
+    "project/a1.jpg",
+    "project/a2.jpg",
+    "project/a3.jpg",
+    "project/a4.jpg",
+    "project/a5.jpg",
+    "project/a6.jpg",
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -30,8 +26,8 @@ const Exploration = () => {
     setSelectedImage(null);
   };
 
-  return (
-    <React.Fragment>
+    return (
+      <React.Fragment>
       <Helmet>
         <title>{`exploration`}</title>
       </Helmet>
@@ -45,12 +41,14 @@ const Exploration = () => {
             </div>
           </div>
           <div className="explorations-container">
-            {/* ... (existing code) ... */}
+          <div className="title contact-title">
+          Life in Frames
+						</div>
 
             <div className="explorations-list">
-              <div className="image-gallery">
+              <div className="magazine-grid">
                 {imageFilenames.map((filename, index) => (
-                  <div key={index} className="gallery-item">
+                  <div key={index} className="magazine-item">
                     <img
                       src={`../${filename}`}
                       alt={`Image ${index + 1}`}

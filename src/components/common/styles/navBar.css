@@ -66,55 +66,76 @@
 /* Media query for smaller screens (adjust the max-width as needed) */
 @media (max-width: 768px) {
   .nav-container {
-    margin: 0;
+    margin: 10px;
+    padding: 10px;
     display: flex;
-    justify-content: flex-end; /* Align to the right */
+    justify-content: flex-end;
     align-items: center;
-}
-  .navbar {
-    display: flex;
-    justify-content: flex-end; /* Change this line to align to the right */
-    align-items: center;
-    position: fixed;
-    top: 3vh;
-    right: 3vh; /* Adjusted position to align to the right */
-    z-index: 999;
   }
   
   .nav-background {
     width: 20px; 
-    /* padding: 16px; */
-    background: #ffffff;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
     border-radius: 12px;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-end; /* Align items to the end (right) of the column */
-  }
-  .menu-btn {
-    display: block; /* Show the menu icon on smaller screens */
-    cursor: pointer;
-  }
-
-  .nav-list {
-    display: none;
-    flex-direction: column; /* Stack items vertically */
-    list-style: none;
-    align-items: flex-end; /* Align items to the end (right) of the column */
-    margin: 0;
-    padding: 0;
+    border-color: var(--link-color);
+    flex-direction: column; 
+    align-items: flex-end;
   }
   
-
+  .menu-btn {
+    display: block; 
+    cursor: pointer;
+    color: var(--link-color);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .menu-btn:hover {
+    color: var(--link-hover-color); /* Change link color on hover */
+  }
+  
+  .nav-list {
+    display: none;
+    flex-direction: column; 
+    list-style: none;
+    align-items: flex-end;
+    margin: 5px;
+    padding: 5px;
+  }
+  
   .menu-open .nav-list {
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     margin-top: 50%;
-    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
-   /* Hide the nav list by default on smaller screens */
+    background: rgba(255, 255, 255, 0.95);
   }
-
+  
   .menu-open .nav-item {
-    margin-bottom: 10px; /* Add spacing between navbar items */
+    margin-bottom: 10px;
   }
+  
+
+
+.menu-btn {
+  display: block; 
+  cursor: pointer;
+  color: var(--link-color);
+  transition: color 0.3s ease-in-out;
+}
+
+
+.menu-open .menu-btn::before {
+  display: none; /* Hide the three-bar menu when the menu is open */
+}
+
+  /* Cross icon for the menu button when clicked */
+  .menu-open .menu-btn::before {
+    display: block;  /* Unicode for a cross symbol */
+    font-size:20px;
+  /* Adjust the size as needed */
+    margin-right: 5px; /* Add spacing between the icon and text */
+    color: var(--link-color)
+  }
+  
+  
 }
