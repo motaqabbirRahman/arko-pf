@@ -8,10 +8,11 @@ const INFO = {
 	socials: {
 		twitter: "https://twitter.com/",
 		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
+		linkedin: "https://bd.linkedin.com/in/sayantan-roy-arko",
 		instagram: "https://instagram.com/",
+		researchgate: "https://www.researchgate.net/profile/Sayantan-Arko",
 		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		facebook: "https://www.facebook.com/sayantan.roy.ark/",
 	},
 
 	homepage: {
