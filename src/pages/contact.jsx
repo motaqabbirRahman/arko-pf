@@ -18,7 +18,7 @@ const Contact = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Contact | ${INFO.main.title}`}</title>
+				<title>{`Contact `}</title>
 			</Helmet>
 
 			<div className="page-content">

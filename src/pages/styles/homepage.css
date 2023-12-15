@@ -94,6 +94,13 @@
 }
 
 @media (max-width: 1024px) {
+	.homepage-logo-container {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		padding-top: 5px;
+	}
+
 	.homepage-first-area {
 		flex-direction: column;
 	}
@@ -125,7 +132,7 @@
 
 	.homepage-image-container {
 		padding-top: 50px;
-		padding-bottom: 50px;
+		/* padding-bottom: 20px; */
 		margin-left: 10px;
 		order: 1;
 	}
@@ -147,6 +154,8 @@
 		margin-left: -25px;
 		margin-right: -25px;
 	}
+
+
 }
 /* .half_background {
   background: linear-gradient(to top, var(--link-color) 0%, transparent 20%);

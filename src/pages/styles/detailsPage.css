@@ -51,8 +51,7 @@
 	display: inline-block;
 	overflow: hidden;
 	width: 100%;
-	border-radius: 10%;
-	/* transform: rotate(3deg); */
+
 }
 
 .details-image-wrapper img {

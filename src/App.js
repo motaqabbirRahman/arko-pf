@@ -32,7 +32,7 @@ function App() {
 				<Route path="/achievements" element={<Achievements />} />
 				<Route path="/details/:id" element={<DetailsPage />} />
 				<Route path="/contact" element={<Contact />} />
-				<Route path="/exploration" element={<Exploration />} />
+				<Route path="/explorations" element={<Exploration />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>

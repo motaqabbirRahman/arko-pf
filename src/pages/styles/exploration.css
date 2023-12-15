@@ -17,84 +17,19 @@
 .explorations-container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
+  align-items: center;
   margin: 0;
   padding-top: 120px;
+  margin-bottom: 80px; /* Add a bottom margin to create space for the footer */
   text-align: justify;
 }
 
-/* Add margin to the top of the image gallery */
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px; /* Adjust the gap as needed */
-  margin-top: 20px; /* Adjust the top margin as needed */
-}
-
-/* Use flex-basis to achieve a 1-2-1 column layout */
-.gallery-item {
-  flex: 1;
-  flex-basis: calc(33.33% - 16px); /* Adjust the width and gap as needed */
-  max-width: 300px;
-  max-height: 300px;
-  overflow: hidden;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Add this code to your existing CSS or create a new file for lightbox styles */
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  z-index: 1000;
-  cursor: pointer;
-}
-
-.lightbox-content {
-  position: relative;
-  max-width: 700px; /* Set your desired max width */
-  max-height: 700px; /* Set your desired max height */
-  width: 100%;
-  height: 100%;
-}
-
-.lightbox img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* magazine.css */
-
-/* magazine.css */
-
 .magazine-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minmax values as needed */
-  gap: 5px; /* Adjust the gap as needed */
-  margin-top: 20px; /* Adjust the top margin as needed */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
 }
 
 .magazine-item {
@@ -107,20 +42,62 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 8px;
   cursor: pointer;
 }
 
-/* Different styles for alternate items */
-.magazine-item:nth-child(even) img {
-  object-position: right top; /* Adjust as needed */
+.image-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* Add the rest of your lightbox styles here if not already present */
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .magazine-grid {
-    grid-template-columns: 1fr; /* Single column for mobile */
-  }
+.magazine-item:hover .image-description {
+  opacity: 1;
+}
+/* Add this code to your existing CSS or create a new file for lightbox styles */
+/* Add this code to your existing CSS or create a new file for lightbox styles */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000; /* Adjust the z-index to make sure it appears on top */
+  cursor: pointer;
 }
 
+.lightbox-content {
+  position: relative;
+  max-width: 700px;
+  max-height: 700px;
+  width: 100%;
+  height: 100%;
+  margin: auto; /* Center the content */
+}
+
+.lightbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Adjust the right value as needed */
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}

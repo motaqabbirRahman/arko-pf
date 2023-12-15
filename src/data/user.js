@@ -33,6 +33,16 @@ const INFO = {
 			description:
 				"Pioneered the development of the first Autonomous Underwater Vehicle (AUV) in Bangladesh.",
 			logo: "../auv.jpg",
+			image: [
+				{
+					original: "../auv.jpg",
+					thumbnail: "../auv.jpg",
+				},
+				{
+					original: "../auv-1.jpg",
+					thumbnail: "../auv-1.jpg",
+				},
+			],
 			linkText: "Explore Project",
 			link: "https://autonomous-underwater-vehicle-details.com",
 		},
@@ -42,6 +52,16 @@ const INFO = {
 			description:
 				"Developed an augmented reality (AR) game for Android using Unity and Vuforia Engine SDK.",
 			logo: "../ar-game.JPG",
+			image: [
+				{
+					original: "../ar-game.JPG",
+					thumbnail: "../ar-game.JPG",
+				},
+				{
+					original: "../ar-game-1.JPG",
+					thumbnail: "../ar-game-1.JPG",
+				},
+			],
 			linkText: "Explore Project",
 			link: "../AR game.jpg",
 		},
@@ -51,6 +71,16 @@ const INFO = {
 			description:
 				"Developed an IoT-based air quality monitoring station capable of measuring pm2.5 particles, CO, and CO2.",
 			logo: "../iot-air.jpg",
+			image: [
+				{
+					original: "../iot-air.jpg",
+					thumbnail: "../iot-air.jpg",
+				},
+				{
+					original: "../iot-air-1.jpg",
+					thumbnail: "../iot-air-1.jpg",
+				},
+			],
 			linkText: "Explore Project",
 			link: "../iot-air.jpg",
 		},
@@ -60,6 +90,16 @@ const INFO = {
 			description:
 				"Designed a game controller using Tri-Axis angular rate sensor with haptic feedback for enhanced gaming experience.",
 			logo: "../game-controller.JPG",
+			image: [
+				{
+					original: "../game-controller.JPG",
+					thumbnail: "../game-controller.JPG",
+				},
+				{
+					original: "../game-controller-1.JPG",
+					thumbnail: "../game-controller-1.JPG",
+				},
+			],
 			linkText: "Explore Project",
 			link: "../game_controller.JPG",
 		},
@@ -69,7 +109,17 @@ const INFO = {
 			title: "6-DoF Robotic Manipulator",
 			description:
 				"Developed a 6-Degree-of-Freedom (6-DoF) robotic manipulator along with an end effector for testing inverse kinematics.",
-			logo: "../project/robotic-manipulator.jpg",
+			logo: "../robotic-manipulator.jpg",
+			image: [
+				{
+					original: "../robotic-manipulator.jpg",
+					thumbnail: "../robotic-manipulator.jpg",
+				},
+				{
+					original: "../robotic-manipulator-1.jpg",
+					thumbnail: "../robotic-manipulator-1.jpg",
+				},
+			],
 			linkText: "Explore Project",
 			link: "https://robotics-manipulator-details.com",
 		},
@@ -80,12 +130,85 @@ const INFO = {
 			description:
 				"Designed a women safety device with GPS tracking and text-alert functionality through GSM technology.",
 			logo: "../women-safety.jpg",
+			image: [
+				{
+					original: "../women-safety.jpg",
+					thumbnail: "../women-safety.jpg",
+				},
+				{
+					original: "../women-safety-1.JPG",
+					thumbnail: "../women-safety-1.JPG",
+				},
+			],
 			linkText: "Explore Project",
 			link: "",
 		},
 
-
 		// Add more projects...
+	],
+
+	achievements: [
+		{
+			title: "ROBOSUB 2023",
+			location: "San Diego",
+			country: "USA",
+			position: "2nd",
+			award: "Ingenuity Award",
+			role: "Core Team Member and Mechatronics Lead",
+			image: "../robusub.jpg",
+		},
+		{
+			title: "ROBOSUB 2022",
+			location: "Maryland",
+			country: "USA",
+			position: "Best Rookie Team",
+			award: "Innovation",
+			role: "Technical Advisor and Mentor",
+			image: "../robusub2022.jpg",
+		},
+		{
+			title: "Singapore AUV Challenge 2018",
+
+			country: "Singapore",
+			position: "7th",
+			award: "",
+			role: "Founding member and Mechatronics Lead",
+			image: "../singapore.jpg",
+		},
+		{
+			title: "test",
+			country: "Singapore",
+			position: "7th",
+			award: "",
+			role: "Founding member and Mechatronics Lead",
+			image: "../singapore.jpg",
+		},
+		{
+			title: "test1",
+			country: "Singapore",
+			position: "7th",
+			award: "",
+			role: "Founding member and Mechatronics Lead",
+			image: "../singapore.jpg",
+		},
+	],
+	explorationInfo: [
+		{
+			title: "test details 1",
+			filename: "../project/a1.jpg",
+			description: "Description for Title 1",
+		},
+		{
+			title: "test details 2",
+			filename: "../project/a2.jpg",
+			description: "Description for Title 2",
+		},
+		{
+			title: "test details 3",
+			filename: "../project/a3.jpg",
+			description: "Description for Title 3",
+		},
+		// Add more entries as needed...
 	],
 };
 

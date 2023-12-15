@@ -3,19 +3,10 @@ import { Helmet } from "react-helmet";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
+import INFO from "../data/user";
 import "./styles/exploration.css";
 
 const Exploration = () => {
-
-  const imageFilenames = [
-    "project/a1.jpg",
-    "project/a2.jpg",
-    "project/a3.jpg",
-    "project/a4.jpg",
-    "project/a5.jpg",
-    "project/a6.jpg",
-  ];
-
   const [selectedImage, setSelectedImage] = useState(null);
 
   const openLightbox = (imageSrc) => {
@@ -26,10 +17,10 @@ const Exploration = () => {
     setSelectedImage(null);
   };
 
-    return (
-      <React.Fragment>
+  return (
+    <React.Fragment>
       <Helmet>
-        <title>{`exploration`}</title>
+        <title>{`Exploration`}</title>
       </Helmet>
 
       <div className="page-content">
@@ -37,23 +28,24 @@ const Exploration = () => {
         <div className="content-wrapper">
           <div className="explorations-logo-container">
             <div className="explorations-logo">
-              <Logo width={4} />
+              <Logo width={46} />
             </div>
           </div>
           <div className="explorations-container">
-          <div className="title contact-title">
-          Life in Frames
-						</div>
+            <div className="title contact-title">Life in Frames</div>
 
             <div className="explorations-list">
               <div className="magazine-grid">
-                {imageFilenames.map((filename, index) => (
+                {INFO.explorationInfo.map((image, index) => (
                   <div key={index} className="magazine-item">
                     <img
-                      src={`../${filename}`}
-                      alt={`Image ${index + 1}`}
-                      onClick={() => openLightbox(`../${filename}`)}
+                      src={image.filename}
+                      alt={image.title}
+                      onClick={() => openLightbox(image.filename)}
                     />
+                    <div className="image-description">
+                      {image.title}
+                    </div>
                   </div>
                 ))}
               </div>

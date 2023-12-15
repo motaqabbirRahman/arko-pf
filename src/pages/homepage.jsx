@@ -66,7 +66,7 @@ const Homepage = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{INFO.main.title}</title>
+				<title>{`Home`}</title>
 		
 			</Helmet>
 

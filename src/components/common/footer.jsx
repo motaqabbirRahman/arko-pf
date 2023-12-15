@@ -25,6 +25,9 @@ const Footer = () => {
 							<Link to="/achievements">Achievements</Link>
 						</li>
 						<li className="footer-nav-link-item">
+							<Link to="/explorations">Explorations</Link>
+						</li>
+						<li className="footer-nav-link-item">
 							<Link to="/contact">Contact</Link>
 						</li>
 					</ul>

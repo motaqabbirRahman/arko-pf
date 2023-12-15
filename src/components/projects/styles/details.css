@@ -1,0 +1,31 @@
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  flex: 0 0 calc(33.33% - 10px);
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+  .details-main {
+    flex-direction: column;
+  }
+
+  .details-left-side,
+  .details-right-side {
+    flex: 1 1 100%;
+  }
+
+  .details-image-wrapper {
+    margin-right: 0;
+    margin-bottom: 10px;
+    flex: 1 1 100%; /* Full width for images on smaller screens */
+  }
+}

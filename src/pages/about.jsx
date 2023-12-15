@@ -19,7 +19,7 @@ const About = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`About | ${INFO.main.title}`}</title>
+					<title>{`About`}</title>
 				<meta
 				/>
 			</Helmet>
